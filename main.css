@@ -108,8 +108,12 @@ a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  inset: -120px -40px auto -40px;
-  height: 260px;
-  background: radial-gradient(circle at center, rgba(88,101,242,0.25), transparent 70%);
-  pointer-events: none;
+  top: -140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(88,101,242,0.30), transparent 70%);
+  filter: blur(40px);
+  z-index: -1;
 }
